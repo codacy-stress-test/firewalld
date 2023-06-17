@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2018 Red Hat, Inc.
+# Copyright (C) 2018-2023 Red Hat, Inc.
 #
 # Authors:
-# Eric Garver <e@erig.me>
+# Eric Garver <eric@garver.life>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -325,6 +325,10 @@ class nftables(object):
                 # them, but it makes the rest of the code simpler. libnftables
                 # does not tolerate them.
                 _rule[verb]["rule"]["expr"] = list(filter(None, _rule[verb]["rule"]["expr"]))
+
+                if self._fw._nftables_counters:
+                    # -1 inserts just before the verdict
+                    _rule[verb]["rule"]["expr"].insert(-1, {"counter": None})
 
                 self._set_rule_replace_priority(_rule, rich_rule_priority_counts, "%%RICH_RULE_PRIORITY%%")
                 self._set_rule_sort_policy_dispatch(_rule, policy_dispatch_index_cache)

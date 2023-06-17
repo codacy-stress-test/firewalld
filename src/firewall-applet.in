@@ -1,10 +1,11 @@
 #!@PYTHON@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2010-2015 Red Hat, Inc.
+# Copyright (C) 2010-2023 Red Hat, Inc.
 #
 # Authors:
 # Thomas Woerner <twoerner@redhat.com>
+# Eric Garver <eric@garver.life>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,15 +21,21 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-import sys
-from PyQt5 import QtGui, QtCore, QtWidgets
+try:
+    from PyQt6 import QtGui, QtCore, QtWidgets
+    from PyQt6.QtGui import QAction
+    from dbus.mainloop.pyqt6 import DBusQtMainLoop
+except (ImportError, ModuleNotFoundError):
+    from PyQt5 import QtGui, QtCore, QtWidgets
+    from PyQt5.QtWidgets import QAction
+    from dbus.mainloop.pyqt5 import DBusQtMainLoop
 
 import gi
 gi.require_version('Notify', '0.7')
 from gi.repository import Notify
 
+import sys
 import os
-from dbus.mainloop.pyqt5 import DBusQtMainLoop
 import functools
 
 from firewall import config
@@ -104,9 +111,9 @@ class ZoneInterfaceEditor(QtWidgets.QDialog):
         self.fill_zone_combo()
         vbox.addWidget(self.combo)
 
-        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.Ok
-                                           | QtWidgets.QDialogButtonBox.Cancel)
-        self.ok_button = buttonBox.button(QtWidgets.QDialogButtonBox.Ok)
+        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.StandardButton.Ok
+                                           | QtWidgets.QDialogButtonBox.StandardButton.Cancel)
+        self.ok_button = buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Ok)
         buttonBox.accepted.connect(self.ok)
         buttonBox.rejected.connect(self.hide)
         vbox.addWidget(buttonBox)
@@ -254,9 +261,9 @@ class ShieldsEditor(QtWidgets.QDialog):
 
         vbox.addLayout(grid)
 
-        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.Ok
-                                           | QtWidgets.QDialogButtonBox.Cancel)
-        self.ok_button = buttonBox.button(QtWidgets.QDialogButtonBox.Ok)
+        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.StandardButton.Ok
+                                           | QtWidgets.QDialogButtonBox.StandardButton.Cancel)
+        self.ok_button = buttonBox.button(QtWidgets.QDialogButtonBox.StandardButton.Ok)
         buttonBox.accepted.connect(self.ok)
         buttonBox.rejected.connect(self.hide)
         vbox.addWidget(buttonBox)
@@ -359,8 +366,8 @@ class AboutDialog(QtWidgets.QDialog):
         vbox2.addWidget(QtWidgets.QLabel(version))
 
         label = QtWidgets.QLabel("<a href=\"%s\">%s</a>" % (url, url))
-        label.setTextFormat(QtCore.Qt.RichText)
-        label.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
+        label.setTextFormat(QtCore.Qt.TextFormat.RichText)
+        label.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.TextBrowserInteraction)
         label.setOpenExternalLinks(True)
 
         vbox2.addWidget(label)
@@ -396,7 +403,7 @@ class AboutDialog(QtWidgets.QDialog):
 
         vbox.addWidget(tabs)
 
-        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.Close)
+        buttonBox = QtWidgets.QDialogButtonBox(QtWidgets.QDialogButtonBox.StandardButton.Close)
         buttonBox.rejected.connect(self.hide)
         vbox.addWidget(buttonBox)
 
@@ -454,47 +461,47 @@ class TrayApplet(QtWidgets.QSystemTrayIcon):
 
         # urgencies
 
-        self.urgencies = { "noicon": QtWidgets.QSystemTrayIcon.NoIcon,
-                           "information": QtWidgets.QSystemTrayIcon.Information,
-                           "warning": QtWidgets.QSystemTrayIcon.Warning,
-                           "critical": QtWidgets.QSystemTrayIcon.Critical }
+        self.urgencies = { "noicon": QtWidgets.QSystemTrayIcon.MessageIcon.NoIcon,
+                           "information": QtWidgets.QSystemTrayIcon.MessageIcon.Information,
+                           "warning": QtWidgets.QSystemTrayIcon.MessageIcon.Warning,
+                           "critical": QtWidgets.QSystemTrayIcon.MessageIcon.Critical }
 
         # actions
 
-        self.shieldsupAction = QtWidgets.QAction(escape(_("Shields Up")),
+        self.shieldsupAction = QAction(escape(_("Shields Up")),
                                              self)
         self.shieldsupAction.setCheckable(True)
         self.shieldsupAction.setChecked(False)
         self.shieldsupAction.triggered.connect(self.shieldsup_changed_cb)
 
-        self.notificationsAction = QtWidgets.QAction(
+        self.notificationsAction = QAction(
             escape(_("Enable Notifications")), self)
         self.notificationsAction.setCheckable(True)
         self.notificationsAction.setChecked(False)
         self.notificationsAction.triggered.connect(self.notification_changed_cb)
 
-        self.settingsAction = QtWidgets.QAction(
+        self.settingsAction = QAction(
             escape(_("Edit Firewall Settings...")), self)
         self.settingsAction.triggered.connect(self.configure_cb)
 
-        self.changeZonesAction = QtWidgets.QAction(
+        self.changeZonesAction = QAction(
             escape(_("Change Zones of Connections...")), self)
         self.changeZonesAction.triggered.connect(self.nm_connection_editor)
 
-        self.shieldsAction = QtWidgets.QAction(
+        self.shieldsAction = QAction(
             escape(_("Configure Shields UP/Down Zones...")), self)
         self.shieldsAction.triggered.connect(self.configure_shields)
 
-        self.panicAction = QtWidgets.QAction(
+        self.panicAction = QAction(
             escape(_("Block all network traffic")), self)
         self.panicAction.setCheckable(True)
         self.panicAction.setChecked(False)
         self.panicAction.triggered.connect(self.panic_mode_cb)
 
-        self.aboutAction = QtWidgets.QAction(escape(_("About")), self)
-        self.aboutAction.triggered.connect(self.about_dialog.exec_)
+        self.aboutAction = QAction(escape(_("About")), self)
+        self.aboutAction.triggered.connect(self.about_dialog.exec)
 
-        #self.quitAction = QtWidgets.QAction(escape(_("Quit")), self,
+        #self.quitAction = QAction(escape(_("Quit")), self,
         #                                triggered=self.quit)
 
         self.connectionsAction = QtWidgets.QWidgetAction(self)
@@ -635,7 +642,7 @@ class TrayApplet(QtWidgets.QSystemTrayIcon):
             self.setVisible(True)
 
     def activated_cb(self, reason):
-        if reason == QtWidgets.QSystemTrayIcon.Trigger:
+        if reason == QtWidgets.QSystemTrayIcon.ActivationReason.Trigger:
             self.left_menu.popup(QtGui.QCursor.pos())
 
     def update_active_zones(self):
@@ -684,12 +691,12 @@ class TrayApplet(QtWidgets.QSystemTrayIcon):
             connection_name = connections[connection][1]
             if zone == "":
                 _binding = _("{entry} (Default Zone: {default_zone})")
-                action = QtWidgets.QAction(
+                action = QAction(
                     escape(
                         _binding.format(default_zone=self.default_zone,
                                         entry=connection_name)), self)
             else:
-                action = QtWidgets.QAction(
+                action = QAction(
                     escape(binding.format(zone=zone, entry=connection_name)), self)
             action.triggered.connect(functools.partial(
                 self.zone_connection_editor, connection, connection_name, zone))
@@ -701,7 +708,7 @@ class TrayApplet(QtWidgets.QSystemTrayIcon):
         # add other interfaces
         for interface in sorted(interfaces):
             zone = interfaces[interface]
-            action = QtWidgets.QAction(
+            action = QAction(
                 escape(binding.format(zone=zone, entry=interface)), self)
             action.triggered.connect(functools.partial(
                 self.zone_interface_editor, interface, zone))
@@ -712,7 +719,7 @@ class TrayApplet(QtWidgets.QSystemTrayIcon):
 
         for source in sorted(sources):
             zone = sources[source]
-            action = QtWidgets.QAction(
+            action = QAction(
                 escape(binding.format(zone=zone, entry=source)), self)
             action.triggered.connect(functools.partial(
                 self.zone_source_editor, source, zone))
@@ -1126,4 +1133,4 @@ app.setQuitOnLastWindowClosed(False)
 
 applet = TrayApplet()
 applet.show()
-sys.exit(app.exec_())
+sys.exit(app.exec())

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-25 10:54-0400\n"
+"POT-Creation-Date: 2023-06-23 13:46-0400\n"
 "PO-Revision-Date: 2015-02-26 10:00+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Malayalam (http://www.transifex.com/projects/p/firewalld/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: ../config/firewall-applet.desktop.in.h:1 ../src/firewall-applet.in:408
+#: ../config/firewall-applet.desktop.in.h:1 ../src/firewall-applet.in:417
 msgid "Firewall Applet"
 msgstr "ഫയര്‍വോള്‍ ആപ്ലെറ്റ്"
 
@@ -37,41 +37,41 @@ msgstr "ഫയര്‍വോള്‍ ക്രമീകരണം"
 msgid "firewall;network;security;iptables;netfilter;"
 msgstr "firewall;network;security;iptables;netfilter;"
 
-#: ../src/firewall-applet.in:84 ../src/firewall-config.in:7986
+#: ../src/firewall-applet.in:93 ../src/firewall-config.in:7998
 #, c-format
 msgid "Select zone for interface '%s'"
 msgstr "'%s' ഇന്റര്‍ഫെയിസിനു് മേഘല തെരഞ്ഞെടുക്കുക"
 
-#: ../src/firewall-applet.in:124 ../src/firewall-applet.in:131
-#: ../src/firewall-applet.in:137 ../src/firewall-config.in:2446
-#: ../src/firewall-config.in:8031 ../src/firewall-config.in:8039
-#: ../src/firewall-config.in:8072 ../src/firewall-config.glade.h:8
+#: ../src/firewall-applet.in:133 ../src/firewall-applet.in:140
+#: ../src/firewall-applet.in:146 ../src/firewall-config.in:2449
+#: ../src/firewall-config.in:8044 ../src/firewall-config.in:8052
+#: ../src/firewall-config.in:8085 ../src/firewall-config.glade.h:8
 msgid "Default Zone"
 msgstr "സ്വതവേയുളഅള മേഖല"
 
-#: ../src/firewall-applet.in:158 ../src/firewall-config.in:8065
+#: ../src/firewall-applet.in:167 ../src/firewall-config.in:8078
 #, c-format
 msgid "Select zone for connection '%s'"
 msgstr "'%s' കണക്ഷനു് മേഖല തെരഞ്ഞെടുക്കുക"
 
-#: ../src/firewall-applet.in:168 ../src/firewall-config.in:3925
+#: ../src/firewall-applet.in:177 ../src/firewall-config.in:3937
 msgid "Failed to set zone {zone} for connection {connection_name}"
 msgstr ""
 
-#: ../src/firewall-applet.in:182
+#: ../src/firewall-applet.in:191
 #, c-format
 msgid "Select zone for source '%s'"
 msgstr ""
 
-#: ../src/firewall-applet.in:199
+#: ../src/firewall-applet.in:208
 msgid "Configure Shields Up/Down Zones"
 msgstr "ഷീള്‍ഡ്സ് അപ്പ്/ഡൌണ്‍ മേഘലകള്‍ ക്രമീകരിയ്ക്കുക"
 
-#: ../src/firewall-applet.in:212
+#: ../src/firewall-applet.in:221
 msgid "Here you can select the zones used for Shields Up and Shields Down."
 msgstr "ഷീള്‍ഡ്സ് അപ്പ്, ഷീള്‍ഡ്സ് ഡൌണ്‍ എന്നിവയ്ക്കുപയോഗിച്ച മേഘലകള്‍ നിങ്ങള്‍ക്കു് ഇവിടെ തെരഞ്ഞെടുക്കാം."
 
-#: ../src/firewall-applet.in:218
+#: ../src/firewall-applet.in:227
 msgid ""
 "This feature is useful for people using the default zones mostly. For users, "
 "that are changing zones of connections, it might be of limited use."
@@ -79,177 +79,177 @@ msgstr ""
 "മിക്കപ്പോഴും സ്വതവേയുള്ള മേഘലകള്‍ ഉപയോഗിയ്ക്കുവര്‍ക്കു് ഈ വിശേഷത പ്രയോജനകരമാണു്. കണക്ഷനുകളുടെ "
 "മേഘലകള്‍ മാറ്റുന്ന ഉപയോക്താക്കള്‍ക്കു് അധികം ഉപയോഗമുണ്ടാവില്ല."
 
-#: ../src/firewall-applet.in:227
+#: ../src/firewall-applet.in:236
 msgid "Shields Up Zone:"
 msgstr "ഷീള്‍ഡ്സ് അപ്പ് മേഘല:"
 
-#: ../src/firewall-applet.in:236 ../src/firewall-applet.in:249
+#: ../src/firewall-applet.in:245 ../src/firewall-applet.in:258
 msgid "Reset To Default"
 msgstr ""
 
-#: ../src/firewall-applet.in:240
+#: ../src/firewall-applet.in:249
 msgid "Shields Down Zone:"
 msgstr "ഷീള്‍ഡ്സ് ഡൌണ്‍ മേഘല:"
 
-#: ../src/firewall-applet.in:332
+#: ../src/firewall-applet.in:341
 #, c-format
 msgid "About %s"
 msgstr ""
 
-#: ../src/firewall-applet.in:383
+#: ../src/firewall-applet.in:392
 msgid "Authors"
 msgstr ""
 
-#: ../src/firewall-applet.in:393
+#: ../src/firewall-applet.in:402
 msgid "License"
 msgstr ""
 
-#: ../src/firewall-applet.in:462
+#: ../src/firewall-applet.in:471
 msgid "Shields Up"
 msgstr "ഷീള്‍ഡ്സ് അപ്പ്"
 
-#: ../src/firewall-applet.in:469
+#: ../src/firewall-applet.in:478
 msgid "Enable Notifications"
 msgstr "അറിയിപ്പുകള്‍ പ്രവര്‍ത്തന സജ്ജമാക്കുക"
 
-#: ../src/firewall-applet.in:475
+#: ../src/firewall-applet.in:484
 msgid "Edit Firewall Settings..."
 msgstr "ഫയര്‍വോള്‍ സജ്ജീകരണങ്ങള്‍ ചിട്ടപ്പെടുത്തുക..."
 
-#: ../src/firewall-applet.in:479 ../src/firewall-config.glade.h:61
+#: ../src/firewall-applet.in:488 ../src/firewall-config.glade.h:61
 msgid "Change Zones of Connections..."
 msgstr "കണക്ഷനുകള്‍ക്കുള്ള മേഘലകള്‍ മാറ്റുക..."
 
-#: ../src/firewall-applet.in:483
+#: ../src/firewall-applet.in:492
 msgid "Configure Shields UP/Down Zones..."
 msgstr "ഷീള്‍ഡ്സ് അപ്പ്/ഡൌണ്‍ മേഘലകള്‍ ക്രമീകരിയ്ക്കുക..."
 
-#: ../src/firewall-applet.in:487
+#: ../src/firewall-applet.in:496
 msgid "Block all network traffic"
 msgstr "എല്ലാ നെറ്റ്‌വര്‍ക്ക് ട്രാഫിക്കും തടയുക"
 
-#: ../src/firewall-applet.in:492
+#: ../src/firewall-applet.in:501
 msgid "About"
 msgstr ""
 
-#: ../src/firewall-applet.in:500 ../src/firewall-config.in:618
-#: ../src/firewall-config.in:2387 ../src/firewall-config.in:2668
-#: ../src/firewall-config.in:2694
+#: ../src/firewall-applet.in:509 ../src/firewall-config.in:618
+#: ../src/firewall-config.in:2389 ../src/firewall-config.in:2679
+#: ../src/firewall-config.in:2705
 msgid "Connections"
 msgstr "കണക്ഷനുകള്‍"
 
-#: ../src/firewall-applet.in:504 ../src/firewall-config.in:620
-#: ../src/firewall-config.in:2475 ../src/firewall-config.in:2671
-#: ../src/firewall-config.in:2696 ../src/firewall-config.glade.h:130
+#: ../src/firewall-applet.in:513 ../src/firewall-config.in:620
+#: ../src/firewall-config.in:2480 ../src/firewall-config.in:2682
+#: ../src/firewall-config.in:2707 ../src/firewall-config.glade.h:130
 msgid "Interfaces"
 msgstr "<interface>"
 
-#: ../src/firewall-applet.in:508 ../src/firewall-config.in:622
-#: ../src/firewall-config.in:2506 ../src/firewall-config.in:2674
-#: ../src/firewall-config.in:2698 ../src/firewall-config.glade.h:135
+#: ../src/firewall-applet.in:517 ../src/firewall-config.in:622
+#: ../src/firewall-config.in:2514 ../src/firewall-config.in:2685
+#: ../src/firewall-config.in:2709 ../src/firewall-config.glade.h:135
 msgid "Sources"
 msgstr "ശ്രോതസ്സുകള്‍"
 
-#: ../src/firewall-applet.in:579 ../src/firewall-config.in:2288
+#: ../src/firewall-applet.in:588 ../src/firewall-config.in:2290
 msgid "Authorization failed."
 msgstr "ആധികാരികത ഉറപ്പാക്കല്‍ പരാജയപ്പെട്ടു."
 
-#: ../src/firewall-applet.in:581 ../src/firewall-config.in:2290
+#: ../src/firewall-applet.in:590 ../src/firewall-config.in:2292
 msgid "Invalid name"
 msgstr "തെറ്റായ ആര്‍ഗ്യുമെന്റ് %s"
 
-#: ../src/firewall-applet.in:585 ../src/firewall-config.in:2293
+#: ../src/firewall-applet.in:594 ../src/firewall-config.in:2295
 msgid "Name already exists"
 msgstr "പേരു് നിലവിലുണ്ടു്"
 
-#: ../src/firewall-applet.in:677
+#: ../src/firewall-applet.in:686
 msgid "{entry} (Zone: {zone})"
 msgstr ""
 
-#: ../src/firewall-applet.in:684
+#: ../src/firewall-applet.in:693
 msgid "{entry} (Default Zone: {default_zone})"
 msgstr ""
 
-#: ../src/firewall-applet.in:762 ../src/firewall-config.in:1574
+#: ../src/firewall-applet.in:771 ../src/firewall-config.in:1574
 msgid "Failed to get connections from NetworkManager"
 msgstr ""
 
-#: ../src/firewall-applet.in:774 ../src/firewall-config.in:1386
+#: ../src/firewall-applet.in:783 ../src/firewall-config.in:1386
 msgid "No NetworkManager imports available"
 msgstr ""
 
-#: ../src/firewall-applet.in:851
+#: ../src/firewall-applet.in:860
 msgid "No connection to firewall daemon"
 msgstr "ഫയര്‍വോള്‍ ഡെമണിലേക്കു് കണക്ഷന്‍ ലഭ്യമല്ല"
 
-#: ../src/firewall-applet.in:857 ../src/firewall-applet.in:994
+#: ../src/firewall-applet.in:866 ../src/firewall-applet.in:1008
 msgid "All network traffic is blocked."
 msgstr "എല്ലാ നെറ്റ്‌വര്‍ക്ക് ട്രാഫിക്കും തടഞ്ഞിരിയ്ക്കുന്നു"
 
-#: ../src/firewall-applet.in:860
+#: ../src/firewall-applet.in:869
 #, c-format
 msgid "Default Zone: '%s'"
 msgstr "സ്വതവേയുള്ള മേഘല: '%s'"
 
-#: ../src/firewall-applet.in:866
+#: ../src/firewall-applet.in:875
 msgid ""
 "Default Zone '{default_zone}' active for connection '{connection}' on "
 "interface '{interface}'"
 msgstr ""
 
-#: ../src/firewall-applet.in:869
+#: ../src/firewall-applet.in:878
 msgid ""
 "Zone '{zone}' active for connection '{connection}' on interface '{interface}'"
 msgstr "'{interface}' ഇന്റര്‍ഫെയിസില്‍  '{connection}' കണക്ഷനു് സജീവമായ '{zone}' മേഘല"
 
-#: ../src/firewall-applet.in:881
+#: ../src/firewall-applet.in:890
 msgid "Zone '{zone}' active for interface '{interface}'"
 msgstr "'{interface}' ഇന്റര്‍ഫെയിസില്‍  സജീവമായ '{zone}' മേഘല"
 
-#: ../src/firewall-applet.in:889
+#: ../src/firewall-applet.in:898
 msgid "Zone '{zone}' active for source {source}"
 msgstr "{source} ശ്രോതസ്സില്‍‍  സജീവമായ '{zone}' മേഘല"
 
-#: ../src/firewall-applet.in:893
+#: ../src/firewall-applet.in:902
 msgid "No Active Zones."
 msgstr "സജീവമായ മേഘലകള്‍ ലഭ്യമല്ല."
 
-#: ../src/firewall-applet.in:952
+#: ../src/firewall-applet.in:966
 msgid "Connection to FirewallD established."
 msgstr "FirewallD-യ്ക്കുള്ള കണക്ഷന്‍ സ്ഥാപിച്ചിരിയ്ക്കുന്നു."
 
-#: ../src/firewall-applet.in:964
+#: ../src/firewall-applet.in:978
 msgid "Connection to FirewallD lost."
 msgstr "FirewallD-ലേക്കുള്ള കണക്ഷന്‍ നഷ്ടമായി."
 
-#: ../src/firewall-applet.in:969
+#: ../src/firewall-applet.in:983
 msgid "FirewallD has been reloaded."
 msgstr "FirewallD വീണ്ടും ലഭ്യമാക്കിയിരിയ്ക്കുന്നു."
 
-#: ../src/firewall-applet.in:976
+#: ../src/firewall-applet.in:990
 #, c-format
 msgid "Default zone changed to '%s'."
 msgstr "സ്വതവേയുള്ള മേഘല '%s' ആയി മാറ്റിയിരിയ്ക്കുന്നു."
 
-#: ../src/firewall-applet.in:995
+#: ../src/firewall-applet.in:1009
 msgid "Network traffic is not blocked anymore."
 msgstr "നെറ്റ്‌വര്‍ക്ക് ട്രാഫിക്ക് ഇനി തടസ്സപ്പെടുത്തിയിട്ടില്ല."
 
-#: ../src/firewall-applet.in:1021 ../src/firewall-applet.in:1075
+#: ../src/firewall-applet.in:1035 ../src/firewall-applet.in:1089
 msgid "activated"
 msgstr "സജീവമാക്കിയിരിക്കുന്നു"
 
-#: ../src/firewall-applet.in:1022 ../src/firewall-applet.in:1076
+#: ../src/firewall-applet.in:1036 ../src/firewall-applet.in:1090
 msgid "deactivated"
 msgstr "നിര്‍ജ്ജീവമാക്കിയിരിയ്ക്കുന്നു"
 
-#: ../src/firewall-applet.in:1027
+#: ../src/firewall-applet.in:1041
 msgid ""
 "Default zone '{default_zone}' {activated_deactivated} for connection "
 "'{connection}' on interface '{interface}'"
 msgstr ""
 
-#: ../src/firewall-applet.in:1032
+#: ../src/firewall-applet.in:1046
 msgid ""
 "Zone '{zone}' {activated_deactivated} for connection '{connection}' on "
 "interface '{interface}'"
@@ -257,21 +257,21 @@ msgstr ""
 "'{interface}' ഇന്റര്‍ഫെയിസില്‍  '{connection}' കണക്ഷനു് സജീവമായ "
 "'{zone}'{activated_deactivated} മേഘല"
 
-#: ../src/firewall-applet.in:1037
+#: ../src/firewall-applet.in:1051
 msgid "Zone '{zone}' {activated_deactivated} for interface '{interface}'"
 msgstr ""
 "'{interface}' ഇന്റര്‍ഫെയിസില്‍  സജീവമായ '{zone}' {activated_deactivated} മേഘല"
 
-#: ../src/firewall-applet.in:1060
+#: ../src/firewall-applet.in:1074
 #, c-format
 msgid "Zone '%s' activated for interface '%s'"
 msgstr "'%s' മേഘല '%s' ഇന്റര്‍ഫെയിസിനു് സജീവമാക്കിയിരിയ്ക്കുന്നു"
 
-#: ../src/firewall-applet.in:1077
+#: ../src/firewall-applet.in:1091
 msgid "Zone '{zone}' {activated_deactivated} for source '{source}'"
 msgstr "'{source}' ശ്രോതസ്സിനുള്ള '{zone}' {activated_deactivated} മേഘല"
 
-#: ../src/firewall-applet.in:1101
+#: ../src/firewall-applet.in:1115
 #, c-format
 msgid "Zone '%s' activated for source '%s'"
 msgstr "'%s' മേഘല '%s' ശ്രോതസ്സിനു് സജീവമാക്കിയിരിയ്ക്കുന്നു"
@@ -348,7 +348,7 @@ msgstr ""
 msgid "Args"
 msgstr ""
 
-#: ../src/firewall-config.in:401 ../src/firewall-config.in:2336
+#: ../src/firewall-config.in:401 ../src/firewall-config.in:2338
 msgid "Runtime"
 msgstr "പ്രവര്‍ത്തനസമയം"
 
@@ -434,8 +434,8 @@ msgstr ""
 msgid "Source"
 msgstr "ശ്രോതസ്സ്"
 
-#: ../src/firewall-config.in:1615 ../src/firewall-config.in:2809
-#: ../src/firewall-config.in:2857
+#: ../src/firewall-config.in:1615 ../src/firewall-config.in:2820
+#: ../src/firewall-config.in:2868
 msgid "Warning"
 msgstr "മുന്നറിയിപ്പ്"
 
@@ -443,24 +443,24 @@ msgstr "മുന്നറിയിപ്പ്"
 msgid "Error"
 msgstr "പിഴവ്"
 
-#: ../src/firewall-config.in:2044 ../src/firewall-config.in:3209
-#: ../src/firewall-config.in:3707 ../src/firewall-config.glade.h:262
+#: ../src/firewall-config.in:2044 ../src/firewall-config.in:3220
+#: ../src/firewall-config.in:3718 ../src/firewall-config.glade.h:262
 msgid "accept"
 msgstr "സ്വീകരിയ്ക്കുക"
 
-#: ../src/firewall-config.in:2046 ../src/firewall-config.in:3211
-#: ../src/firewall-config.in:3709 ../src/firewall-config.in:3857
+#: ../src/firewall-config.in:2046 ../src/firewall-config.in:3222
+#: ../src/firewall-config.in:3720 ../src/firewall-config.in:3869
 #: ../src/firewall-config.glade.h:263
 msgid "reject"
 msgstr "നിരസിയ്ക്കുക"
 
-#: ../src/firewall-config.in:2050 ../src/firewall-config.in:3226
-#: ../src/firewall-config.in:3714 ../src/firewall-config.glade.h:264
+#: ../src/firewall-config.in:2050 ../src/firewall-config.in:3237
+#: ../src/firewall-config.in:3725 ../src/firewall-config.glade.h:264
 msgid "drop"
 msgstr "ഉപേക്ഷിയ്ക്കുക"
 
-#: ../src/firewall-config.in:2052 ../src/firewall-config.in:3228
-#: ../src/firewall-config.in:3716 ../src/firewall-config.in:3858
+#: ../src/firewall-config.in:2052 ../src/firewall-config.in:3239
+#: ../src/firewall-config.in:3727 ../src/firewall-config.in:3870
 #: ../src/firewall-config.glade.h:265
 msgid "mark"
 msgstr ""
@@ -470,50 +470,50 @@ msgstr ""
 msgid "limit"
 msgstr "പരിധി"
 
-#: ../src/firewall-config.in:2071 ../src/firewall-config.in:3163
-#: ../src/firewall-config.in:3343 ../src/firewall-config.in:3654
+#: ../src/firewall-config.in:2071 ../src/firewall-config.in:3174
+#: ../src/firewall-config.in:3354 ../src/firewall-config.in:3665
 #: ../src/firewall-config.glade.h:284
 msgid "service"
 msgstr "സേവനം "
 
-#: ../src/firewall-config.in:2073 ../src/firewall-config.in:3169
-#: ../src/firewall-config.in:3345 ../src/firewall-config.in:3657
+#: ../src/firewall-config.in:2073 ../src/firewall-config.in:3180
+#: ../src/firewall-config.in:3356 ../src/firewall-config.in:3668
 #: ../src/firewall-config.glade.h:285
 msgid "port"
 msgstr "പോര്‍ട്ട്"
 
-#: ../src/firewall-config.in:2076 ../src/firewall-config.in:3174
-#: ../src/firewall-config.in:3354 ../src/firewall-config.in:3667
+#: ../src/firewall-config.in:2076 ../src/firewall-config.in:3185
+#: ../src/firewall-config.in:3365 ../src/firewall-config.in:3678
 #: ../src/firewall-config.glade.h:286
 msgid "protocol"
 msgstr "സമ്പ്രദായം "
 
-#: ../src/firewall-config.in:2078 ../src/firewall-config.in:3179
-#: ../src/firewall-config.in:3684 ../src/firewall-config.in:3870
+#: ../src/firewall-config.in:2078 ../src/firewall-config.in:3190
+#: ../src/firewall-config.in:3695 ../src/firewall-config.in:3882
 #: ../src/firewall-config.glade.h:291
 msgid "masquerade"
 msgstr "മാസ്ക്യുറേഡിംങ്"
 
-#: ../src/firewall-config.in:2080 ../src/firewall-config.in:3182
-#: ../src/firewall-config.in:3356 ../src/firewall-config.in:3670
-#: ../src/firewall-config.in:3885 ../src/firewall-config.glade.h:287
+#: ../src/firewall-config.in:2080 ../src/firewall-config.in:3193
+#: ../src/firewall-config.in:3367 ../src/firewall-config.in:3681
+#: ../src/firewall-config.in:3897 ../src/firewall-config.glade.h:287
 msgid "icmp-block"
 msgstr "icmp-block"
 
-#: ../src/firewall-config.in:2082 ../src/firewall-config.in:3187
-#: ../src/firewall-config.in:3358 ../src/firewall-config.in:3673
+#: ../src/firewall-config.in:2082 ../src/firewall-config.in:3198
+#: ../src/firewall-config.in:3369 ../src/firewall-config.in:3684
 #: ../src/firewall-config.glade.h:288
 msgid "icmp-type"
 msgstr ""
 
-#: ../src/firewall-config.in:2084 ../src/firewall-config.in:3192
-#: ../src/firewall-config.in:3360 ../src/firewall-config.in:3676
-#: ../src/firewall-config.in:3878 ../src/firewall-config.glade.h:289
+#: ../src/firewall-config.in:2084 ../src/firewall-config.in:3203
+#: ../src/firewall-config.in:3371 ../src/firewall-config.in:3687
+#: ../src/firewall-config.in:3890 ../src/firewall-config.glade.h:289
 msgid "forward-port"
 msgstr "forward-port"
 
-#: ../src/firewall-config.in:2088 ../src/firewall-config.in:3201
-#: ../src/firewall-config.in:3362 ../src/firewall-config.in:3686
+#: ../src/firewall-config.in:2088 ../src/firewall-config.in:3212
+#: ../src/firewall-config.in:3373 ../src/firewall-config.in:3697
 #: ../src/firewall-config.glade.h:290
 msgid "source-port"
 msgstr ""
@@ -526,118 +526,118 @@ msgstr "നില"
 msgid "yes"
 msgstr "ഉവ്വു്"
 
-#: ../src/firewall-config.in:2450 ../src/firewall-config.in:2490
-#: ../src/firewall-config.in:2520 ../src/firewall-config.glade.h:89
+#: ../src/firewall-config.in:2453 ../src/firewall-config.in:2496
+#: ../src/firewall-config.in:2529 ../src/firewall-config.glade.h:89
 msgid "Zone"
 msgstr "മേഘല"
 
-#: ../src/firewall-config.in:2463
+#: ../src/firewall-config.in:2468
 #, c-format
 msgid "Default Zone: %s"
 msgstr ""
 
-#: ../src/firewall-config.in:2470 ../src/firewall-config.in:2501
-#: ../src/firewall-config.in:2531
+#: ../src/firewall-config.in:2475 ../src/firewall-config.in:2509
+#: ../src/firewall-config.in:2542
 #, c-format
 msgid "Zone: %s"
 msgstr ""
 
-#: ../src/firewall-config.in:2806
+#: ../src/firewall-config.in:2817
 #, c-format
 msgid "Zone '%s': Service '%s' is not available."
 msgstr "'%s' മേഘല: '%s' സര്‍വീസ് തരം ലഭ്യമല്ല."
 
-#: ../src/firewall-config.in:2810 ../src/firewall-config.in:2858
+#: ../src/firewall-config.in:2821 ../src/firewall-config.in:2869
 #: ../src/firewall-config.glade.h:163
 msgid "Remove"
 msgstr "നീക്കം ചെയ്യുക"
 
-#: ../src/firewall-config.in:2810 ../src/firewall-config.in:2858
+#: ../src/firewall-config.in:2821 ../src/firewall-config.in:2869
 msgid "Ignore"
 msgstr "അവഗണിയ്ക്കുക"
 
-#: ../src/firewall-config.in:2854
+#: ../src/firewall-config.in:2865
 #, c-format
 msgid "Zone '%s': ICMP type '%s' is not available."
 msgstr "'%s' മേഘല: '%s' ഐസിഎംപി തരം ലഭ്യമല്ല."
 
-#: ../src/firewall-config.in:3009
+#: ../src/firewall-config.in:3020
 msgid "Built-in zone, rename not supported."
 msgstr "ബിള്‍ട്ടിന്‍ zone, rename പിന്തുണയ്ക്കുന്നില്ല."
 
-#: ../src/firewall-config.in:3124 ../src/firewall-config.in:3624
+#: ../src/firewall-config.in:3135 ../src/firewall-config.in:3635
 #: ../src/firewall-config.glade.h:270
 msgid "second"
 msgstr "നിമിഷം"
 
-#: ../src/firewall-config.in:3125 ../src/firewall-config.in:3625
+#: ../src/firewall-config.in:3136 ../src/firewall-config.in:3636
 #: ../src/firewall-config.glade.h:271
 msgid "minute"
 msgstr "മിനിറ്റ്"
 
-#: ../src/firewall-config.in:3126 ../src/firewall-config.in:3626
+#: ../src/firewall-config.in:3137 ../src/firewall-config.in:3637
 #: ../src/firewall-config.glade.h:272
 msgid "hour"
 msgstr "മണിക്കൂര്‍"
 
-#: ../src/firewall-config.in:3127 ../src/firewall-config.in:3627
+#: ../src/firewall-config.in:3138 ../src/firewall-config.in:3638
 #: ../src/firewall-config.glade.h:273
 msgid "day"
 msgstr "ദിവസം"
 
-#: ../src/firewall-config.in:3128 ../src/firewall-config.in:3628
+#: ../src/firewall-config.in:3139 ../src/firewall-config.in:3639
 #: ../src/firewall-config.glade.h:276
 msgid "emergency"
 msgstr "emergency"
 
-#: ../src/firewall-config.in:3129 ../src/firewall-config.in:3629
+#: ../src/firewall-config.in:3140 ../src/firewall-config.in:3640
 #: ../src/firewall-config.glade.h:277
 msgid "alert"
 msgstr "alert"
 
-#: ../src/firewall-config.in:3130 ../src/firewall-config.in:3630
+#: ../src/firewall-config.in:3141 ../src/firewall-config.in:3641
 #: ../src/firewall-config.glade.h:278
 msgid "critical"
 msgstr "critical"
 
-#: ../src/firewall-config.in:3131 ../src/firewall-config.in:3631
+#: ../src/firewall-config.in:3142 ../src/firewall-config.in:3642
 #: ../src/firewall-config.glade.h:279
 msgid "error"
 msgstr "പിശക്"
 
-#: ../src/firewall-config.in:3132 ../src/firewall-config.in:3632
+#: ../src/firewall-config.in:3143 ../src/firewall-config.in:3643
 #: ../src/firewall-config.glade.h:280
 msgid "warning"
 msgstr "മുന്നറിയിപ്പു്"
 
-#: ../src/firewall-config.in:3133 ../src/firewall-config.in:3633
+#: ../src/firewall-config.in:3144 ../src/firewall-config.in:3644
 #: ../src/firewall-config.glade.h:281
 msgid "notice"
 msgstr "notice"
 
-#: ../src/firewall-config.in:3134 ../src/firewall-config.in:3634
+#: ../src/firewall-config.in:3145 ../src/firewall-config.in:3645
 #: ../src/firewall-config.glade.h:282
 msgid "info"
 msgstr "വിവരം"
 
-#: ../src/firewall-config.in:3135 ../src/firewall-config.in:3635
+#: ../src/firewall-config.in:3146 ../src/firewall-config.in:3646
 #: ../src/firewall-config.glade.h:283
 msgid "debug"
 msgstr "debug"
 
-#: ../src/firewall-config.in:3335 ../src/firewall-config.in:3560
-#: ../src/firewall-config.in:3584 ../src/firewall-config.in:3639
-#: ../src/firewall-config.in:3774 ../src/firewall-config.in:3821
+#: ../src/firewall-config.in:3346 ../src/firewall-config.in:3571
+#: ../src/firewall-config.in:3595 ../src/firewall-config.in:3650
+#: ../src/firewall-config.in:3786 ../src/firewall-config.in:3833
 msgid "ipv4"
 msgstr "ipv4"
 
-#: ../src/firewall-config.in:3337 ../src/firewall-config.in:3562
-#: ../src/firewall-config.in:3586 ../src/firewall-config.in:3641
-#: ../src/firewall-config.in:3776 ../src/firewall-config.in:3823
+#: ../src/firewall-config.in:3348 ../src/firewall-config.in:3573
+#: ../src/firewall-config.in:3597 ../src/firewall-config.in:3652
+#: ../src/firewall-config.in:3788 ../src/firewall-config.in:3835
 msgid "ipv6"
 msgstr "ipv6"
 
-#: ../src/firewall-config.in:5029
+#: ../src/firewall-config.in:5041
 msgid ""
 "Forwarding to another system is only useful if the interface is "
 "masqueraded.\n"
@@ -647,81 +647,81 @@ msgstr ""
 "പ്രയോജനകരമാകൂ.\n"
 "ഈ മേഖല മാസ്ക്യുറേഡ് ചെയ്യണമോ ?"
 
-#: ../src/firewall-config.in:5391
+#: ../src/firewall-config.in:5403
 msgid "Built-in service, rename not supported."
 msgstr "ബിള്‍ട്ടിന്‍ service, rename പിന്തുണയ്ക്കുന്നില്ല."
 
-#: ../src/firewall-config.in:5600
+#: ../src/firewall-config.in:5612
 msgid "Please enter an ipv4 address with the form address[/mask]."
 msgstr ""
 
-#: ../src/firewall-config.in:5601
+#: ../src/firewall-config.in:5613
 msgid "The mask can be a network mask or a number."
 msgstr ""
 
-#: ../src/firewall-config.in:5603
+#: ../src/firewall-config.in:5615
 msgid "Please enter an ipv6 address with the form address[/mask]."
 msgstr ""
 
-#: ../src/firewall-config.in:5604
+#: ../src/firewall-config.in:5616
 msgid "The mask is a number."
 msgstr ""
 
-#: ../src/firewall-config.in:5606
+#: ../src/firewall-config.in:5618
 msgid "Please enter an ipv4 or ipv6 address with the form address[/mask]."
 msgstr ""
 
-#: ../src/firewall-config.in:5607
+#: ../src/firewall-config.in:5619
 msgid ""
 "The mask can be a network mask or a number for ipv4.\n"
 "The mask is a number for ipv6."
 msgstr ""
 
-#: ../src/firewall-config.in:5791
+#: ../src/firewall-config.in:5803
 msgid "Built-in ipset, rename not supported."
 msgstr ""
 
-#: ../src/firewall-config.in:5883 ../src/firewall-config.in:5965
+#: ../src/firewall-config.in:5895 ../src/firewall-config.in:5977
 msgid "Please select a file"
 msgstr ""
 
-#: ../src/firewall-config.in:5890 ../src/firewall-config.in:5972
+#: ../src/firewall-config.in:5902 ../src/firewall-config.in:5984
 msgid "Text Files"
 msgstr ""
 
-#: ../src/firewall-config.in:5895 ../src/firewall-config.in:5977
+#: ../src/firewall-config.in:5907 ../src/firewall-config.in:5989
 msgid "All Files"
 msgstr ""
 
-#: ../src/firewall-config.in:6398 ../src/firewall-config.in:6427
+#: ../src/firewall-config.in:6410 ../src/firewall-config.in:6439
 #: ../src/firewall-config.glade.h:40
 msgid "All"
 msgstr ""
 
-#: ../src/firewall-config.in:6398 ../src/firewall-config.in:6427
+#: ../src/firewall-config.in:6410 ../src/firewall-config.in:6439
 #: ../src/firewall-config.glade.h:41
 msgid "IPv4"
 msgstr "IPv4"
 
-#: ../src/firewall-config.in:6399 ../src/firewall-config.in:6427
+#: ../src/firewall-config.in:6411 ../src/firewall-config.in:6439
 #: ../src/firewall-config.glade.h:42
 msgid "IPv6"
 msgstr "IPv6"
 
-#: ../src/firewall-config.in:6404
+#: ../src/firewall-config.in:6416
 msgid "Built-in helper, rename not supported."
 msgstr ""
 
-#: ../src/firewall-config.in:6882
+#: ../src/firewall-config.in:6894
 msgid "Built-in icmp, rename not supported."
 msgstr "ബിള്‍ട്ടിന്‍ icmp, rename പിന്തുണയ്ക്കുന്നില്ല."
 
-#: ../src/firewall-config.in:7954
+#: ../src/firewall-config.in:7966
 #, c-format
 msgid "Failed to read file '%s': %s"
 msgstr ""
 
-#: ../src/firewall-config.in:8087
+#: ../src/firewall-config.in:8100
 #, c-format
 msgid "Select zone for source %s"
 msgstr "'%s' ശ്രോതസ്സിനു് മേഘല തെരഞ്ഞെടുക്കുക"
@@ -1072,8 +1072,8 @@ msgid ""
 msgstr ""
 "മേഘലയ്ക്കുള്ള നെറ്റ്‌വര്‍ക്ക് കണക്ഷനുകള്‍, ഇന്റര്‍ഫെയിസുകള്‍, ശ്രോതസ്സ് വിലാസങ്ങള്‍ എന്നിവയ്ക്കുള്ള വിശ്വസ്തത "
 "firewalld മേഘല നിഷ്കര്‍ഷിയ്ക്കുന്നു. സര്‍വീസുകള്‍, പോര്‍ട്ടുകള്‍, സമ്പ്രദായങ്ങള്‍, മാസ്ക്യൂറേഡിങ്, പോര്‍ട്ട്/"
-"പാക്കറ്റ് ഫോര്‍വേഡിങ്, icmp ഫില്‍റ്ററുകള്‍, റിച്ച് റൂളുകള്‍ എന്നിവ മേഘലയില്‍ ലഭ്യമാകുന്നു. ഇന്റര്‍"
-"ഫെയിസുകളും ശ്രോതസ്സിനുള്ള വിലാസങ്ങളും അനുസരിച്ചാണു് മേഘല."
+"പാക്കറ്റ് ഫോര്‍വേഡിങ്, icmp ഫില്‍റ്ററുകള്‍, റിച്ച് റൂളുകള്‍ എന്നിവ മേഘലയില്‍ ലഭ്യമാകുന്നു. "
+"ഇന്റര്‍ഫെയിസുകളും ശ്രോതസ്സിനുള്ള വിലാസങ്ങളും അനുസരിച്ചാണു് മേഘല."
 
 #: ../src/firewall-config.glade.h:90
 msgid "Add Zone"
@@ -1098,8 +1098,8 @@ msgid ""
 "connections, interfaces and sources bound to this zone."
 msgstr ""
 "ഏതെല്ലാം സര്‍‍വീസുകളാണ് വിശ്വസനീയം എന്ന് നിങ്ങള്‍ക്ക് ഇവിടെ വ്യ‌ക്തമാക്കാം. ഈ മേഘലയ്ക്കുള്ള "
-"ശ്രോതസ്സുകളും ഇന്റര്‍ഫെയിസുകളും കണക്ഷനുകളിലും നിന്നും സിസ്റ്റത്തിലേക്കുള്ള എല്ലാ ഹോസ്റ്റുകളും നെറ്റ്‌വര്‍"
-"ക്കുകളും വിശ്വസനീയമായ സേവനങ്ങള്‍ക്കു് ലഭ്യമാകുന്നു."
+"ശ്രോതസ്സുകളും ഇന്റര്‍ഫെയിസുകളും കണക്ഷനുകളിലും നിന്നും സിസ്റ്റത്തിലേക്കുള്ള എല്ലാ ഹോസ്റ്റുകളും "
+"നെറ്റ്‌വര്‍ക്കുകളും വിശ്വസനീയമായ സേവനങ്ങള്‍ക്കു് ലഭ്യമാകുന്നു."
 
 #: ../src/firewall-config.glade.h:95
 msgid "Services"
@@ -1167,8 +1167,8 @@ msgid ""
 msgstr ""
 "നിങ്ങളുടെ പ്രാദേശിക ശൃംഖലാ പ്രവര്‍ത്തനത്തിനെ ഇന്റര്‍നെറ്റുമായി ബന്ധപ്പെടുത്തുന്നതിനായി ഒരു "
 "ആതിഥേയന്‍ അല്ലെങ്കില്‍ റൂട്ടര്‍ നിങ്ങള്‍ ക്രമീകരിക്കുന്നു എങ്കില്‍ മാസ്ക്യുറേഡിംഗ് നിങ്ങള്‍ക്ക് "
-"പ്രയോജനകരമാകുന്നു. നിങ്ങളുടെ പ്രാദേശിക ശൃംഖലാകര്മ്മം  അദൃശ്യ‌മായിരിക്കും, മാത്രമല്ല, ഇന്റര്‍"
-"നെറ്റില്‍ ആതിഥേയനെ ഒരു വിലാസമായി കണക്കാക്കുന്നു. മാസ്ക്യുറേഡിംഗ് IPv4 മാത്രമാണ്."
+"പ്രയോജനകരമാകുന്നു. നിങ്ങളുടെ പ്രാദേശിക ശൃംഖലാകര്മ്മം  അദൃശ്യ‌മായിരിക്കും, മാത്രമല്ല, "
+"ഇന്റര്‍നെറ്റില്‍ ആതിഥേയനെ ഒരു വിലാസമായി കണക്കാക്കുന്നു. മാസ്ക്യുറേഡിംഗ് IPv4 മാത്രമാണ്."
 
 #: ../src/firewall-config.glade.h:109
 msgid "Masquerade zone"
@@ -1179,8 +1179,8 @@ msgid ""
 "If you enable masquerading, IP forwarding will be enabled for your IPv4 "
 "networks."
 msgstr ""
-"മാസ്ക്യുറേഡിങ് പ്രവര്‍ത്തന സജ്ജമാക്കുന്നെങ്കില്‍, നിങ്ങളുടെ IPv4 നെറ്റ്‌വര്‍ക്കു് ഐപി ഫോര്‍വേഡിങ് പ്രവര്‍"
-"ത്തന സജ്ജമാക്കുന്നു."
+"മാസ്ക്യുറേഡിങ് പ്രവര്‍ത്തന സജ്ജമാക്കുന്നെങ്കില്‍, നിങ്ങളുടെ IPv4 നെറ്റ്‌വര്‍ക്കു് ഐപി ഫോര്‍വേഡിങ് "
+"പ്രവര്‍ത്തന സജ്ജമാക്കുന്നു."
 
 #: ../src/firewall-config.glade.h:111
 msgid "Masquerading"
@@ -1195,8 +1195,8 @@ msgid ""
 msgstr ""
 "ഒരു പ്രാദേശിക വ്യവ്സ്ഥയിലുള്ള പോര്‍ട്ടില്‍ നിന്നും മറ്റൊന്നിലേക്ക് അല്ലെങ്കില്‍ ഒരു പ്രാദേശിക "
 "വ്യ‌വസ്ഥയില്‍നിന്നും മറ്റൊന്നിലേക്ക് പോര്‍ട്ടുകള്‍ അയയ്ക്കുന്നതിനായി എന്ട്രികള്‍ നല്‍കുക. വിനിമയതലം "
-"മാസ്ക്യുറേഡ് ചെയ്തെങ്കില്‍ മാത്രമേ മറ്റൊരു സിസ്റ്റമിലേക്ക് അയയ്ക്കുന്നതില്‍ പ്രയോജനമുള്ളൂ. പോര്‍ട്ട് ഫോര്‍"
-"വേര്‍ഡിംഗ് IPv4 മാത്രമാണ്."
+"മാസ്ക്യുറേഡ് ചെയ്തെങ്കില്‍ മാത്രമേ മറ്റൊരു സിസ്റ്റമിലേക്ക് അയയ്ക്കുന്നതില്‍ പ്രയോജനമുള്ളൂ. പോര്‍ട്ട് "
+"ഫോര്‍വേര്‍ഡിംഗ് IPv4 മാത്രമാണ്."
 
 #: ../src/firewall-config.glade.h:113
 msgid "Add Forward Port"
@@ -1310,8 +1310,8 @@ msgid ""
 "A firewalld service is a combination of ports, protocols, modules and "
 "destination addresses."
 msgstr ""
-"പോര്‍ട്ടുകള്‍, സമ്പ്രദായങ്ങള്‍, ഘടകങ്ങള്‍, ലക്ഷ്യ വിലാസങ്ങള്‍ എന്നിവയെ ഒന്നിച്ചു് ഒരു firewalld സര്‍"
-"വീസായി കണക്കാക്കുന്നു."
+"പോര്‍ട്ടുകള്‍, സമ്പ്രദായങ്ങള്‍, ഘടകങ്ങള്‍, ലക്ഷ്യ വിലാസങ്ങള്‍ എന്നിവയെ ഒന്നിച്ചു് ഒരു firewalld "
+"സര്‍വീസായി കണക്കാക്കുന്നു."
 
 #: ../src/firewall-config.glade.h:139
 msgid "Add Service"
@@ -1495,8 +1495,8 @@ msgid ""
 "as a last resort when it is not possible to use other firewalld features."
 msgstr ""
 "നേരിട്ടുള്ള ക്രമീകരണം ഫയര്‍വോളിലേക്കു് കൂടുതല്‍ അനുമതി നല്‍കുന്നു. ഈ ഐച്ഛികങ്ങള്‍ക്കു്, ഉപയോക്താവു് "
-"അടിസ്ഥാന iptables ശൈലികള്‍, അതായതു്, പട്ടികകള്‍, ചെയിനുകള്‍, കമാന്‍ഡുകള്‍, പരാമീറ്ററുകള്‍, ടാര്‍"
-"ഗറ്റുകള്‍ എന്നിവ അറിയേണ്ട ആവശ്യമുണ്ടു്. മറ്റു് firewalld വിശേഷതകള്‍ ഉപയോഗിയ്ക്കുവാന്‍ സാധ്യമല്ല "
+"അടിസ്ഥാന iptables ശൈലികള്‍, അതായതു്, പട്ടികകള്‍, ചെയിനുകള്‍, കമാന്‍ഡുകള്‍, പരാമീറ്ററുകള്‍, "
+"ടാര്‍ഗറ്റുകള്‍ എന്നിവ അറിയേണ്ട ആവശ്യമുണ്ടു്. മറ്റു് firewalld വിശേഷതകള്‍ ഉപയോഗിയ്ക്കുവാന്‍ സാധ്യമല്ല "
 "എന്നുറപ്പുള്ളപ്പോള്‍ മാത്രം നേരിട്ടുള്ള ക്രമീകരണം ഉപയോഗിയ്ക്കുവാന്‍ പാടുള്ളൂ."
 
 #: ../src/firewall-config.glade.h:176
@@ -1851,8 +1851,8 @@ msgstr "ദയവായി ഒരു റിച്ച് റൂള്‍ നല�
 #, fuzzy
 msgid "For host or network allow or denylisting deactivate the element."
 msgstr ""
-"ഹോസ്റ്റ് അല്ലെങ്കില്‍ നെറ്റ്‌വര്‍ക്കിനു്, വൈറ്റ് അല്ലെങ്കില്‍ ബ്ലാക്ക് ലിസ്റ്റ് ചെയ്തതിനു് എലമെന്റ് നിര്‍"
-"ജീവമാക്കുക."
+"ഹോസ്റ്റ് അല്ലെങ്കില്‍ നെറ്റ്‌വര്‍ക്കിനു്, വൈറ്റ് അല്ലെങ്കില്‍ ബ്ലാക്ക് ലിസ്റ്റ് ചെയ്തതിനു് എലമെന്റ് "
+"നിര്‍ജീവമാക്കുക."
 
 #: ../src/firewall-config.glade.h:256
 msgid "Source:"
